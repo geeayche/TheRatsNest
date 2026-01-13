@@ -5,7 +5,6 @@ import { IMAGES } from "./images";
 const showImage = ref(null)
 const isMobile = window.innerWidth < 607;
 const pages = {
-  MAIN: "main",
   DRAWINGS: "drawings",
   ABOUT: "about",
   MUSIC: "music"
@@ -42,12 +41,6 @@ function setImage(image) {
         <button @click="navigate(pages.ABOUT)" class="items-center col-start-4 justify-center p-1 rounded cursor-pointer text-black font-bold underline">
           About
         </button>
-      </div>
-
-      <div v-if="currentPage === pages.MAIN" class="h-full justify-center items-center flex flex-col">
-        <div>
-          <img height="750" width="750" src="../../assets/heron.svg" />
-        </div>
       </div>
 
       <div v-if="currentPage === pages.ABOUT" class="h-full flex flex-col justify-center">
