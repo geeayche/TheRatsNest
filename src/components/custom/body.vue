@@ -21,7 +21,7 @@ function setImage(image) {
 </script>
 
 <template>
-  <link href="/src/style.css" rel="stylesheet" />
+  <link href="src/style.css" rel="stylesheet" />
 
   <div class="h-full w-full overflow-y-auto">
     <div class="h-1/10 md:h-3/25 flex justify-center items-start relative pt-5">
