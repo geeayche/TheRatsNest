@@ -27,7 +27,7 @@ function setImage(image) {
     <div class="h-1/10 md:h-3/25 flex justify-center items-start relative pt-5">
       <span class="text-red-500 font-sekuya text-center mt-8 text-2xl text-wrap md:text-3xl md:text-nowrap cursor-pointer hidden md:block" @click="navigate(pages.DRAWINGS)">❄︎♒︎♏︎ ☼︎♋︎⧫︎🕯︎⬧︎ ☠︎♏︎⬧︎⧫︎ (THE RAT'S NEST)</span>
       <span class="text-red-500 font-sekuya text-center mt-8 text-2xl text-wrap md:text-3xl md:text-nowrap cursor-pointer block md:hidden" @click="navigate(pages.DRAWINGS)">❄︎♒︎♏︎ ☼︎♋︎⧫︎🕯︎⬧︎ ☠︎♏︎⬧︎⧫︎ <br>(THE RAT'S NEST)</span>
-      <span class="ml-5"><img height="170px" width="170px" src="../../assets/mainRat.svg"/></span>
+      <span class="ml-5"><img class="cursor-pointer" height="170px" width="170px" src="../../assets/mainRat.svg" @click="navigate(pages.DRAWINGS)"/></span>
     </div>
 
     <div class="h-9/10 md:h-22/25 flex flex-col pt-5">
