@@ -115,7 +115,7 @@ function setImage(image) {
             </p>
           </div>
         </div>
-        <div v-for="n in isMobile ? IMAGES.length : IMAGES.length % 3">
+        <div v-for="n in isMobile ? IMAGES.length : Math.ceil(IMAGES.length / 3)">
           <div class="grid grid-cols-1 md:grid-cols-3">
             <div
               v-for="image in IMAGES.slice(

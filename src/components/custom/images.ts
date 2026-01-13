@@ -7,11 +7,25 @@ export const IMAGES = [
     width: 400
   },
   {
-    source: new URL('../../assets/skeleton.png', import.meta.url),
-    title: 'Skeleton Holding a Lighter',
-    date: new Date("09/06/2025"),
+    source: new URL('../../assets/beer.jpg', import.meta.url),
+    title: 'Dawg',
+    date: new Date("05/15/2022"),
+    height: 350,
+    width: 300
+  },
+  {
+    source: new URL('../../assets/puffin.jpg', import.meta.url),
+    title: 'Puffin',
+    date: new Date("05/11/2022"),
+    height: 350,
+    width: 300
+  },
+  {
+    source: new URL('../../assets/bee.jpg', import.meta.url),
+    title: 'Cruisin\'',
+    date: new Date("05/09/2022"),
     height: 400,
-    width: 400
+    width: 450
   },
   {
     source: new URL('../../assets/et.jpg', import.meta.url),
