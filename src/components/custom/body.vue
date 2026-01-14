@@ -23,7 +23,7 @@ function setImage(image) {
 <template>
   <link href="src/style.css" rel="stylesheet" />
 
-  <div class="h-full w-full overflow-y-auto">
+  <div class="h-dvh w-full overflow-y-auto">
     <div class="h-1/10 md:h-3/25 flex justify-center items-start relative md:mb-8 pt-5">
       <span
         class="text-red-500 font-sekuya text-center md:mt-8 text-lg text-wrap md:text-3xl md:text-nowrap cursor-pointer hidden md:block"
