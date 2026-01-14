@@ -24,7 +24,7 @@ function setImage(image) {
   <link href="src/style.css" rel="stylesheet" />
 
   <div class="h-full w-full overflow-y-auto">
-    <div class="h-1/10 md:h-3/25 flex justify-center items-start relative pt-5">
+    <div class="h-1/10 md:h-3/25 flex justify-center items-start relative md:mb-8 pt-5">
       <span
         class="text-red-500 font-sekuya text-center md:mt-8 text-lg text-wrap md:text-3xl md:text-nowrap cursor-pointer hidden md:block"
         @click="navigate(pages.DRAWINGS)"
@@ -71,12 +71,12 @@ function setImage(image) {
 
       <div
         v-if="currentPage === pages.ABOUT"
-        class="h-full flex flex-col justify-center"
+        class="h-full flex flex-col justify-center md:pt-8"
       >
         <div class="flex flex-col items-center justify-center">
           <img height="450" width="450" src="../../assets/ratKing.svg" />
           <p
-            class="flex justify-center mt-20 font-bold text-center text-sm md:text-xl text-black"
+            class="flex justify-center mt-10 font-bold text-center text-sm md:text-xl text-black"
           >
             A gathering of drawings, music, and anything else that may come
             about
