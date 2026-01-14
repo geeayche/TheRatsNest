@@ -71,7 +71,7 @@ function setImage(image) {
 
       <div
         v-if="currentPage === pages.ABOUT"
-        class="h-full flex flex-col justify-center md:pt-8"
+        class="h-dvh flex flex-col justify-center md:pt-8"
       >
         <div class="flex flex-col items-center justify-center">
           <img height="450" width="450" src="../../assets/ratKing.svg" />
@@ -86,7 +86,7 @@ function setImage(image) {
 
       <div
         v-if="currentPage === pages.MUSIC"
-        class="h-full flex flex-col justify-center"
+        class="h-dvh flex flex-col justify-center"
       >
         <p
           class="flex justify-center font-bold text-center text-sm md:text-xl text-black"
@@ -97,7 +97,7 @@ function setImage(image) {
 
       <div
         v-if="currentPage === pages.DRAWINGS"
-        class="h-full md:h-22/25 flex flex-col md:pt-10 md:mt-0"
+        class="h-dvh md:h-22/25 flex flex-col md:pt-10 md:mt-0"
       >
         <div v-if="!isMobile" class="flex flex-col items-center justify-center">
           <img
