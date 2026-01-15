@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <link href="src/style.css" rel="stylesheet" />
-  <main class="bg-yellow-50 h-screen w-screen">
+  <main class="bg-yellow-50 h-dvh w-screen relative md:static">
     <Body />
   </main>
 </template>
