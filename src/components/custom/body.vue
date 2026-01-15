@@ -23,8 +23,8 @@ function setImage(image) {
 <template>
   <link href="src/style.css" rel="stylesheet" />
 
-  <div class="h-dvh w-full overflow-y-auto">
-    <div class="h-1/10 md:h-3/25 flex justify-center items-start mb-2 md:mb-8 pt-5">
+  <div class="overflow-y-auto">
+    <div class="flex justify-center items-start mb-2 md:mb-8 pt-5">
       <span
         class="text-red-500 font-sekuya text-center md:mt-8 text-lg text-wrap md:text-3xl md:text-nowrap cursor-pointer hidden md:block"
         @click="navigate(pages.DRAWINGS)"
@@ -45,7 +45,7 @@ function setImage(image) {
       /></span>
     </div>
 
-    <div class="h-9/10 md:h-22/25 flex flex-col">
+    <div class="flex flex-col">
       <div
         class="grid grid-cols-3 md:grid-cols-5 items-center border-2 border-black"
       >
@@ -71,7 +71,7 @@ function setImage(image) {
 
       <div
         v-if="currentPage === pages.ABOUT"
-        class="h-dvh flex flex-col justify-center md:pt-8"
+        class="flex flex-col justify-center pt-8"
       >
         <div class="flex flex-col items-center justify-center">
           <img height="450" width="450" src="../../assets/ratKing.svg" />
@@ -86,10 +86,10 @@ function setImage(image) {
 
       <div
         v-if="currentPage === pages.MUSIC"
-        class="h-dvh flex flex-col justify-center"
+        class="flex flex-col items-center justify-center pt-8"
       >
         <p
-          class="flex justify-center font-bold text-center text-sm md:text-xl text-black"
+          class="flex justify-center items-center font-bold text-center text-sm md:text-xl text-black"
         >
           Nothing yet
         </p>
@@ -97,7 +97,7 @@ function setImage(image) {
 
       <div
         v-if="currentPage === pages.DRAWINGS"
-        class="h-dvh md:h-22/25 flex flex-col md:pt-10 md:mt-0"
+        class="flex flex-col md:pt-10 md:mt-0"
       >
         <div v-if="!isMobile" class="flex flex-col items-center justify-center">
           <img
