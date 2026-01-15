@@ -23,8 +23,8 @@ function setImage(image) {
 <template>
   <link href="src/style.css" rel="stylesheet" />
 
-  <div class="h-dvh w-full overflow-y-auto relative md:static">
-    <div class="h-1/10 md:h-3/25 flex justify-center items-start mb-2 md:mb-8 pt-5 relative md:static">
+  <div class="h-dvh w-full overflow-y-auto">
+    <div class="h-1/10 md:h-3/25 flex justify-center items-start mb-2 md:mb-8 pt-5">
       <span
         class="text-red-500 font-sekuya text-center md:mt-8 text-lg text-wrap md:text-3xl md:text-nowrap cursor-pointer hidden md:block"
         @click="navigate(pages.DRAWINGS)"
@@ -45,7 +45,7 @@ function setImage(image) {
       /></span>
     </div>
 
-    <div class="h-9/10 md:h-22/25 flex flex-col relative md:static">
+    <div class="h-9/10 md:h-22/25 flex flex-col">
       <div
         class="grid grid-cols-3 md:grid-cols-5 items-center border-2 border-black"
       >
