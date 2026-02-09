@@ -101,7 +101,9 @@ function setImage(image) {
       >
         <div v-if="!isMobile" class="flex flex-col items-center justify-center">
           <img
-            class="flex mx-auto h-75 w-75 md:h-150 md:w-150"
+            class="flex mx-auto"
+            :height="IMAGES[0].height * 1.3"
+            :width="IMAGES[0].width * 1.3"
             :src="IMAGES[0].source"
           />
           <p
