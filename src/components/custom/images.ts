@@ -1,5 +1,12 @@
 export const IMAGES = [
   {
+    source: new URL('../../assets/lizard.jpg', import.meta.url),
+    title: 'Bad Lizard',
+    date: new Date("02/19/2026"),
+    height: 350,
+    width: 300
+  },
+  {
     source: new URL('../../assets/monkey.jpg', import.meta.url),
     title: 'Monkey',
     date: new Date("02/09/2026"),
