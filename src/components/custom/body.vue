@@ -1,13 +1,14 @@
 <script setup>
 import { ref } from "vue";
 import { IMAGES } from "./images";
+import { PAINTINGS } from "./paintings";
 
 const showImage = ref(null);
 const isMobile = window.innerWidth < 607;
 const pages = {
   DRAWINGS: "drawings",
   ABOUT: "about",
-  MUSIC: "music",
+  PAINTINGS: "paintings",
 };
 const currentPage = ref(pages.DRAWINGS);
 
@@ -56,10 +57,10 @@ function setImage(image) {
           Drawings
         </button>
         <button
-          @click="navigate(pages.MUSIC)"
+          @click="navigate(pages.PAINTINGS)"
           class="items-center md:col-start-3 justify-center p-1 rounded cursor-pointer text-black font-bold underline"
         >
-          Music
+          Paintings
         </button>
         <button
           @click="navigate(pages.ABOUT)"
@@ -78,20 +79,26 @@ function setImage(image) {
           <p
             class="flex justify-center mt-10 font-bold text-center text-sm md:text-xl text-black"
           >
-            A gathering of drawings, music, and anything else that may come
+            A gathering of drawings, paintings, and anything else that may come
             about
           </p>
         </div>
       </div>
 
       <div
-        v-if="currentPage === pages.MUSIC"
+        v-if="currentPage === pages.PAINTINGS"
         class="flex flex-col items-center justify-center pt-8"
       >
+        <img
+          class="flex mx-auto"
+          :height="PAINTINGS[0].height * 1.3"
+          :width="PAINTINGS[0].width * 1.3"
+          :src="PAINTINGS[0].source"
+        />
         <p
-          class="flex justify-center items-center font-bold text-center text-sm md:text-xl text-black"
+          class="flex mx-auto text-red-500 font-sekuya mt-8 text-center text-sm md:text-xl"
         >
-          Nothing yet
+          "{{ PAINTINGS[0].title }}" - {{ PAINTINGS[0].date }}
         </p>
       </div>
 
