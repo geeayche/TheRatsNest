@@ -96,10 +96,22 @@ function setImage(image) {
           :src="PAINTINGS[0].source"
         />
         <p
-          class="flex mx-auto text-red-500 font-sekuya mt-8 text-center text-sm md:text-xl"
+          v-if="!isMobile" class="flex mx-auto text-red-500 font-sekuya mt-8 text-center text-sm md:text-xl"
         >
           "{{ PAINTINGS[0].title }}" - {{ PAINTINGS[0].date }}
         </p>
+        <div v-if="isMobile" class="flex flex-col">
+          <p
+            class="flex mx-auto text-red-500 font-sekuya mt-4 text-center justify-center text-xs md:text-sm"
+          >
+            "{{ PAINTINGS[0].title }}"
+          </p>
+          <p
+            class="flex mx-auto text-red-500 font-sekuya mt-4 text-center justify-center text-xs md:text-xs"
+          >
+            {{ PAINTINGS[0].date }}
+          </p>
+        </div>
       </div>
 
       <div
